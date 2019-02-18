@@ -16,6 +16,7 @@ namespace eco
 
 class SampleUpdate
 {
+	const static float minmum_sample_weight_ = 0.0036;
   public:
 	SampleUpdate(){};
 	virtual ~SampleUpdate(){};
@@ -100,8 +101,6 @@ class SampleUpdate
 	size_t nSamples_ = 50;
 
 	float learning_rate_ = 0.009;
-
-	const float minmum_sample_weight_ = 0.0036;
 
 	std::vector<float> sample_weight_;
 
