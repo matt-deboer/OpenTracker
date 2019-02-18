@@ -36,3 +36,9 @@ add_library(ecotracker SHARED ${eco_srcs})
 add_executable(runecotracker.bin ${eco_demo_srcs})
 
 target_link_libraries(runecotracker.bin  ${OpenCV_LIBS})
+
+install(TARGETS ecotracker LIBRARY DESTINATION lib)
+
+file(GLOB eco_includes ${CMAKE_CURRENT_LIST_DIR}/*.hpp ${CMAKE_CURRENT_LIST_DIR}/*.h)
+
+install(FILES ${eco_includes} DESTINATION include/eco)
