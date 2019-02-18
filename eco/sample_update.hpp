@@ -16,7 +16,7 @@ namespace eco
 
 class SampleUpdate
 {
-	const static float minmum_sample_weight_ = 0.0036;
+	const static float minmum_sample_weight_ = 0.0036f;
   public:
 	SampleUpdate(){};
 	virtual ~SampleUpdate(){};
